@@ -77,15 +77,29 @@ footer {
 
   /* TODO: MODULE_LAYOUT */
   /* 1. Set a specific height. */
+  height: 70vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   /* 2. Position and center the image to scale nicely on all screens. */
+  background-position: center;
+  position: relative;
 }
 
 .hero-subheading {
   font-size: 24px;
   font-weight: 100;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
 .hero-input {
-  width: 80%;
+  width: 80vw;
   height: 50px;
   padding: 16px;
   border-radius: 8px;
