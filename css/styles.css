@@ -51,23 +51,37 @@ footer {
 .tile {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  border-radius: 8px;
+  overflow: hidden;
 }
 .tile img {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s;
 }
 .tile img:hover {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  filter: brightness(50%);
+  transform: scale(1.1); /* Why transition in .tile img ?*/
 }
 
 /* Hint: Notice the position:absolute and z-index properties. */
 /* Think about how those in relation to the existing "tile" classes. */
 .tile-text {
-  position: absolute;
+  position: absolute; 
   z-index: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: white;
 }
 
 .hero-image {
@@ -77,25 +91,16 @@ footer {
 
   /* TODO: MODULE_LAYOUT */
   /* 1. Set a specific height. */
-  height: 70vh;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 50vh;
   /* 2. Position and center the image to scale nicely on all screens. */
   background-position: center;
-  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-subheading {
   font-size: 24px;
   font-weight: 100;
-  color: white;
-  text-align: center;
-  justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .hero-input {
@@ -113,18 +118,25 @@ footer {
 /* ================================== */
 /* Adventures grid page CSS */
 /* ================================== */
-
 .adventure-card {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
 }
 .adventure-card img {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  height: 100%;
+  width: 100%; 
+  object-fit: cover;
+  transition: all 0.2s;
 }
 .adventure-card img:hover {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
+  filter: brightness(50%);
 }
 
 /* ================================== */
@@ -134,16 +146,22 @@ footer {
 .adventure-detail-card {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
-
+  border: 1px solid #eee;
+  border-radius: 4px;
+  padding: 16px;
 }
 
 .adventure-card-image {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s;
 }
 .adventure-card-image:hover {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
+  filter: brightness(50%);
 }
 .experience-content ul li {
   margin-left: 16px;

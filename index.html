@@ -24,10 +24,10 @@
   <!-- 1. Use appropriate css classes on nav element. -->
   <!-- 2. Add child elements as required. -->
 
-   <nav class="navbar navbar-light bg-light navbar-expand-sm fixed-top">
-    <a class="navbar-brand h1" href="#" style="padding-left: 20px;">QTrip</a>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-      <ul class="navbar-nav mr-auto">
+   <nav class="navbar navbar-light bg-light navbar-expand-sm p-3">
+    <a class="navbar-brand h1" href="#">QTrip</a>
+    <div class="collapse navbar-collapse" id="navbarNav"> 
+      <ul class="navbar-nav d-flex justify-content-end w-100">
         <li class="nav-item">
           <a class="nav-link" href="#">Home</a>
         </li>
@@ -42,50 +42,114 @@
       data-bs-toggle="collapse"
       data-bs-target="#navbarNav"
     >
-    <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"></span>
     </button>
    </nav> 
-
 
   <!-- TODO: MODULE_LAYOUT -->
   <!-- 1. Use appropriate css classes on the hero image container element. -->
   <!-- 2. Add child elements as required. -->
 
-   <div class="hero-image d-flex">
-     <div class="hero-subheading">
-      <h1 style="font-weight:bold; color:white;">Welcome to QTrip</h1>
-      <p style="color: white;">Explore the world with fantastic places to venture around</p>
-      <input type="text" placeholder="Search a City" class="hero-input">
-     </div>
+   <!-- Even though text is centered with justify-content-center still use  text-center to maintain center even in responsive manner. -->
+   <div class="hero-image d-flex flex-column justify-content-center align-items-center text-white text-center mb-4">
+    <div class="container"> 
+      <h1>Welcome to QTrip</h1>
+      <p class="hero-subheading">Explore the world with fantastic places to venture around</p>
+      <input placeholder="Search a City" class="hero-input" />
+    </div>
    </div> 
 
   <div class="container">
     <!-- TODO: MODULE_LAYOUT -->
     <!-- 1. Create the grid like layout as required. -->
     <div class="row">
-      <div class="col-12 col-sm-6 col-xl-3 mt-4">
-        <a href="#" style="color:black; font-weight:bold;">Bengaluru</a>
+      <div class="col-12 col-sm-6 col-xl-3 mb-4"> <!--Can remove col-12 as it is default. But no harm if used too.-->
+        <a href="pages/adventures/index.html">
+          <div class="tile">
+            <img src="assets/bengaluru.jpg" />
+            <div class="tile-text text-center"> 
+              <h5>Bengaluru</h5>
+              <p>100+ PLACES</p>
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="col-12 col-sm-6 col-xl-3 mt-4">
-        <a href="#" style="color:black; font-weight:bold">Kolkata</a>
+      <div class="col-12 col-sm-6 col-xl-3 mb-4">
+        <a href="#">
+          <div class="tile">
+            <img src="assets/kolkata.jpg" />
+            <div class="tile-text text-center"> 
+              <h5>Kolkata</h5>
+              <p>52+ PLACES</p>
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="col-12 col-sm-6 col-xl-3 mt-4">
-        <a href="#" style="color:black; font-weight:bold">Goa</a>
+      <div class="col-12 col-sm-6 col-xl-3 mb-4">
+        <a href="#">
+          <div class="tile">
+            <img src="assets/goa.jpg" />
+            <div class="tile-text text-center"> 
+              <h5>Goa</h5>
+              <p>100+ PLACES</p>
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="col-12 col-sm-6 col-xl-3 mt-4">
-        <a href="#" style="color:black; font-weight:bold">Mumbai</a>
+      <div class="col-12 col-sm-6 col-xl-3 mb-4">
+        <a href="#">
+          <div class="tile">
+            <img src="assets/mumbai.jpg" />
+            <div class="tile-text text-center"> 
+              <h5>Mumbai</h5>
+              <p>100+ PLACES</p>
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="col-12 col-sm-6 col-xl-3 mt-4">
-        <a href="#" style="color:black; font-weight:bold">Singapore</a>
+      <div class="col-12 col-sm-6 col-xl-3 mb-4">
+        <a href="#">
+          <div class="tile">
+            <img src="assets/singapore.jpg" />
+            <div class="tile-text text-center"> 
+              <h5>Singapore</h5>
+              <p>100+ PLACES</p>
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="col-12 col-sm-6 col-xl-3 mt-4">
-        <a href="#" style="color:black; font-weight:bold">Dubai</a>
+      <div class="col-12 col-sm-6 col-xl-3 mb-4">
+        <a href="#">
+          <div class="tile">
+            <img src="assets/dubai.jpg" />
+            <div class="tile-text text-center"> 
+              <h5>Dubai</h5>
+              <p>100+ PLACES</p>
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="col-12 col-sm-6 col-xl-3 mt-4">
-        <a href="#" style="color:black; font-weight:bold">Malaysia</a>
+      <div class="col-12 col-sm-6 col-xl-3 mb-4">
+        <a href="#">
+          <div class="tile">
+            <img src="assets/malaysia.jpg" />
+            <div class="tile-text text-center"> 
+              <h5>Malaysia</h5>
+              <p>100+ PLACES</p>
+            </div>
+          </div>
+        </a>
       </div>
-      <div class="col-12 col-sm-6 col-xl-3 mt-4">
-        <a href="#" style="color:black; font-weight:bold">Paris</a>
+      <div class="col-12 col-sm-6 col-xl-3 mb-4">
+        <a href="#">
+          <div class="tile">
+            <img src="assets/paris.jpg" />
+            <div class="tile-text text-center"> 
+              <h5>Paris</h5>
+              <p>100+ PLACES</p>
+            </div>
+          </div>
+        </a>
       </div>
     </div>
   </div>
